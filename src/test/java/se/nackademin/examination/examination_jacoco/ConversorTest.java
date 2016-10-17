@@ -24,5 +24,11 @@ public class ConversorTest {
 		conversor.setCityConverterArrayValues();
 		assertEquals(conversor.getCityConverterArray().get(0)," A, ");
 	}
+	@Test
+	public void testCoversorGender() {
+		conversor.setGenderConverterArrayValues();
+		assertEquals(conversor.getGenderConverterArray().get(0),"man!");
+	}
+	
 
 }

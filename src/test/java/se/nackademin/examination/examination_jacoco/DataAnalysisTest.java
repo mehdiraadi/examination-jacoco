@@ -8,6 +8,7 @@ import java.util.Arrays;
 import org.junit.Test;
 
 public class DataAnalysisTest {
+	DataAnalysis dataAnalysis = new DataAnalysis();
 
 	@Test
 	public void test1() {
@@ -18,6 +19,14 @@ public class DataAnalysisTest {
 		assertTrue("The result should contain 'The name of the homecity is big and the participant is 30 or older' ",
 				result.contains("The name of the homecity is big and the participant is 30 or older"));
 
+	}
+	@Test
+	public void test2(){
+		ArrayList<String> values= new ArrayList<String>();
+		values.addAll(Arrays.asList("Guess", "Jasmi","Shaheer","F","29","Clt"));
+		String result = dataAnalysis.buildFinalString(values);
+		assertTrue("The result should contain 'The name of the homecity is small and the participant is younger than 30' ",
+				result.contains("The name of the homecity is small and the participant is younger than 30"));
 	}
 
 }

@@ -12,6 +12,17 @@ public class GameTest {
 		int i = game.calculateOutPutBasedOnNames("Rafael", "Silva");
 		assertEquals("The result should be 1", i, 1);
 	}
+	@Test
+	public void testMethod2() {
+		int i=game.calculateOutPutBasedOnNames("Jasmi", "Shaheeer");
+		assertEquals("The result should be 0", i, 0);
+		
+	}
+	@Test
+	public void testMethod3() {
+		int i=game.calculateOutPutBasedOnNames("Jasmi", "Shahe");
+		assertEquals("The result should be 2", i, 2);
+	}
 	
 		
 

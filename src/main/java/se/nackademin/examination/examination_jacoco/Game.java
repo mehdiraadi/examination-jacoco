@@ -14,6 +14,7 @@ public class Game {
 		getAgeFromInputValues(values);		
 		System.out.println(dataAnalysis.buildFinalString(values));
 		runGame(values.get(0),values.get(1),values.get(2),getGenderFromInputValues(values),getAgeFromInputValues(values),values.get(5));
+	    
 	}
 	
 	

@@ -17,10 +17,10 @@ import java.util.ArrayList;
 	
 	public String getResultStringNamesAndAge(ArrayList&lt;String&gt; values){
 <span class="fc" id="L19">		Game game = new Game();</span>
-<span class="pc bpc" id="L20" title="1 of 4 branches missed.">		if (values.get(1).length()&lt;=values.get(2).length() &amp;&amp; game.getAgeFromInputValues(values)&lt;=30){</span>
+<span class="fc bfc" id="L20" title="All 4 branches covered.">		if (values.get(1).length()&lt;=values.get(2).length() &amp;&amp; game.getAgeFromInputValues(values)&lt;=30){</span>
 <span class="fc" id="L21">			return &quot;The first name is smaller or equals in size to the last name and the participant is 30 or younger&quot;;</span>
-<span class="pc bpc" id="L22" title="2 of 4 branches missed.">		} if (values.get(1).length()&gt;values.get(2).length() &amp;&amp; game.getAgeFromInputValues(values)&gt;30){</span>
-<span class="nc" id="L23">			return &quot;The first name is greater or equals in size to the last name and the participant older than 30&quot;;</span>
+<span class="fc bfc" id="L22" title="All 4 branches covered.">		} if (values.get(1).length()&gt;values.get(2).length() &amp;&amp; game.getAgeFromInputValues(values)&gt;30){</span>
+<span class="fc" id="L23">			return &quot;The first name is greater or equals in size to the last name and the participant older than 30&quot;;</span>
 		}
 		
 <span class="fc" id="L26">		return &quot;No analysis was performed&quot;;</span>
@@ -29,17 +29,17 @@ import java.util.ArrayList;
 	public String getResulStringHomecityAndAge(ArrayList&lt;String&gt; values){
 <span class="fc" id="L30">		Game game = new Game();</span>
 <span class="fc bfc" id="L31" title="All 2 branches covered.">		if (values.get(5).length()&lt;5){</span>
-<span class="pc bpc" id="L32" title="1 of 2 branches missed.">			if (game.getAgeFromInputValues(values)&gt;=30){</span>
-<span class="nc" id="L33">				return &quot;The name of the homecity is small and the participant is 30 or older&quot;;</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">			if (game.getAgeFromInputValues(values)&gt;=30){</span>
+<span class="fc" id="L33">				return &quot;The name of the homecity is small and the participant is 30 or older&quot;;</span>
 			}else{
 <span class="fc" id="L35">				return &quot;The name of the homecity is small and the participant is younger than 30&quot;;</span>
 			}
 		}else{
 			
-<span class="pc bpc" id="L39" title="1 of 2 branches missed.">			if (game.getAgeFromInputValues(values)&gt;=30){</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">			if (game.getAgeFromInputValues(values)&gt;=30){</span>
 <span class="fc" id="L40">				return &quot;The name of the homecity is big and the participant is 30 or older&quot;;</span>
 			}else{
-<span class="nc" id="L42">				return &quot;The name of the homecity is big and the participant is younger than 30&quot;;</span>
+<span class="fc" id="L42">				return &quot;The name of the homecity is big and the participant is younger than 30&quot;;</span>
 			}
 			
 		}
